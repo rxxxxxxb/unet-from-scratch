@@ -30,7 +30,7 @@ This symmetric, U-shaped architecture enables the network to integrate high-leve
 └── README.md
 ```
 
-- **`data/`**: This directory will store the training images and masks.
+- **`data/`**: This directory will store the training images and masks from the Oxford-IIIT Pet Dataset.
 - **`notebooks/`**: Contains a Jupyter Notebook (`training_notebook.ipynb`) that provides an interactive walkthrough of the training process.
 - **`src/`**: Contains the core source code:
     - **`model.py`**: The U-Net model implementation.
@@ -47,3 +47,16 @@ This symmetric, U-shaped architecture enables the network to integrate high-leve
 - TorchVision
 - Pillow
 - Requests
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/unet-from-scratch.git
+   cd unet-from-scratch
+   ```
+
+2. **Install the required packages:**
+   ```bash
+   pip install torch torchvision pillow requests
+   ```
