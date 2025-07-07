@@ -11,3 +11,39 @@ The U-Net architecture is a fully convolutional network that is particularly sui
 - **Decoder (Upsampling Path):** This path enables precise localization. It uses transposed convolutions to upsample the feature maps, which are then concatenated with the corresponding feature maps from the encoder path.
 
 This symmetric, U-shaped architecture enables the network to integrate high-level contextual information with spatial details, resulting in accurate segmentation maps.
+
+
+
+## Project Structure
+
+```
+. 
+├── data
+│   ├── images
+│   └── annotations
+├── notebooks
+│   └── training_notebook.ipynb
+├── src
+│   ├── model.py
+│   └── utils.py
+├── main.py
+└── README.md
+```
+
+- **`data/`**: This directory will store the training images and masks.
+- **`notebooks/`**: Contains a Jupyter Notebook (`training_notebook.ipynb`) that provides an interactive walkthrough of the training process.
+- **`src/`**: Contains the core source code:
+    - **`model.py`**: The U-Net model implementation.
+    - **`utils.py`**: Helper functions for data loading and preprocessing.
+- **`main.py`**: The main training script.
+- **`README.md`**: This file.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- PyTorch
+- TorchVision
+- Pillow
+- Requests
